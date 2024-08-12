@@ -80,5 +80,12 @@ An **AWS Lambda function** is configured as a target for a specific rule in Even
 ### 💾 Data Storage
 Following processing, the Lambda function stores the processed data in **Amazon DynamoDB**.
 
+## Conclusion
+
+!Event-Driven Architecture
+
+Using event-driven architecture in a serverless setup is a great way to build apps that are scalable, cost-effective, and resilient. By following the steps in this blog, you can easily understand the architecture and create your own serverless event-driven workflows.
+
+
 
 
