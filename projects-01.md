@@ -61,4 +61,24 @@ Probably the easiest way to get started with serverless. Let us take the second 
 4. **Data Storage**: After processing, the Lambda function stores the relevant data efficiently in Amazon DynamoDB. 📊
 
 
+## 🎉 Use Case 3: Event Producers for Distributed Computing Models
+
+Let's dive into the third workflow (refer to the diagram):
+
+### 🚀 Event Producer
+An event producer generates an event, which could be a system event, user action, or any trigger-worthy occurrence.
+
+### 📅 Event Occurrence
+The event occurs, and the event producer sends this event to **AWS EventBridge**.
+
+### 🌉 EventBridge
+**AWS EventBridge** is used as an event bus that receives the event from the producer. It acts as a central hub for routing events to various targets based on defined rules.
+
+### 🛠️ Lambda Function
+An **AWS Lambda function** is configured as a target for a specific rule in EventBridge. When the event matches the rule, EventBridge invokes the Lambda function, which then processes the event data, executing custom logic, transformations, or other actions as needed.
+
+### 💾 Data Storage
+Following processing, the Lambda function stores the processed data in **Amazon DynamoDB**.
+
+
 
